@@ -147,7 +147,7 @@ Zoom:    0.6x          0.85x     1.0x      1.15x          1.4x
 
 ### Pseudocode 伪代码
 
-```pseudocode
+```text
 function updateProjection(zoom: float):
     if zoom < 0.85:
         # Pure Far Perspective: FOV varies with zoom
@@ -272,7 +272,7 @@ Buffer zone: 1.0x → 0.9x = 0.1x of "dead zone" before exit fires
 
 **Elastic pan pseudocode 弹性平移伪代码:**
 
-```pseudocode
+```text
 on pointerMove(delta):
     newOffset = currentOffset + delta
     if isOutsideBounds(newOffset, roomBbox * 1.10):
